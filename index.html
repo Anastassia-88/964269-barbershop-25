@@ -36,13 +36,13 @@
       <h2 class="visually-hidden">Features</h2>
       <ul class="features-list">
         <li class="feature-item">
-          <h3>Быстро</h3>
+          <h3>Quickly</h3>
           <p>
             Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
           </p>
         </li>
         <li class="feature-item">
-          <h3>Круто</h3>
+          <h3>Cool</h3>
           <p>
             Забудьте, как вы стриглись раньше.<br>
             Мы сделаем из вас звезду футбола или кино!<br>
@@ -50,7 +50,7 @@
           </p>
         </li>
         <li class="feature-item">
-          <h3>Дорого</h3>
+          <h3>Expensive</h3>
           <p>
             Наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определеный статус?
           </p>
@@ -58,77 +58,81 @@
       </ul>
     </section>
 
-    <section class="news">
-      <h2>News</h2>
-      <ul class="news-list">
-        <li class="news-item">
+    <div class="index-columns">
+        <section class="news">
+          <h2>News</h2>
+          <ul class="news-list">
+            <li class="news-item">
+              <p>
+                Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
+              </p>
+              <time datetime="2019-01-11">11 January</time>
+            </li>
+            <li class="news-item">
+              <p>
+                В нашей команде пополнение, Борис «Бритва» Стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды
+              </p>
+              <time datetime="2019-01-18">18 January</time>
+            </li>
+          </ul>
+          <a class="button" href="news.html">All news</a>
+        </section>
+
+        <section class="gallery">
+          <h2>Gallery</h2>
+          <figure class="gallery-content">
+            <a href="#">
+                <img src="img/studio.jpg" width="286" height="164" alt="Interior">
+            </a>
+          </figure>
+          <button type="button" class="button gallery-button gallery-button-back">Back</button>
+          <button type="button" class="button gallery-button gallery-button-next">Next</button>
+        </section>
+    </div>
+
+    <div class="index-columns">
+        <section class="contacts">
+          <h2>Contacts</h2>
           <p>
-            Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
+            Barbershop «Borodinsky»<br>
+            Address: Санкт-Петербург, Большая Конюшенная, дом 19/8<br>
+            Tel.: +7 (495) 666-02-66
           </p>
-          <time datetime="2019-01-11">11 January</time>
-        </li>
-        <li class="news-item">
           <p>
-            В нашей команде пополнение, Борис «Бритва» Стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды
+            Opening hours:<br>
+            Monday-Friday: 10:00 - 22:00<br>
+            Saturday-Sunday: 10:00 - 19:00
           </p>
-          <time datetime="2019-01-18">18 January</time>
-        </li>
-      </ul>
-      <a class="button" href="news.html">All news</a>
-    </section>
+          <a class="button" href="map.html">How to find us</a>
+          <a class="button" href="contacts.html">Feedback</a>
+        </section>
 
-    <section class="gallery">
-      <h2>Gallery</h2>
-      <figure class="gallery-content">
-        <a href="#">
-            <img src="img/studio.jpg" width="286" height="164" alt="Interior">
-        </a>
-      </figure>
-      <button type="button" class="button gallery-button gallery-button-back">Back</button>
-      <button type="button" class="button gallery-button gallery-button-next">Next</button>
-    </section>
-
-    <section class="contacts">
-      <h2>Contacts</h2>
-      <p>
-        Barbershop «Borodinsky»<br>
-        Address: Санкт-Петербург, Большая Конюшенная, дом 19/8<br>
-        Tel.: +7 (495) 666-02-66
-      </p>
-      <p>
-        Opening hours:<br>
-        Monday-Friday: 10:00 - 22:00<br>
-        Saturday-Sunday: 10:00 - 19:00
-      </p>
-      <a class="button" href="map.html">How to find us</a>
-      <a class="button" href="contacts.html">Feedback</a>
-    </section>
-
-    <section class="appointment">
-      <h2>Make an appointment</h2>
-      <p class="appointment-info">
-        Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
-      </p>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="appointment-item">
-                <label for="appointment-date">Date</label>
-                <input id="appointment-date" type="text" name="date" placeholder="08.10.2019" value="">
-            </p>
-            <p class="appointment-item">
-                <label for="appointment-time">Time</label>
-                <input id="appointment-time" type="text" name="time" placeholder="10:00" value="">
-            </p>
-            <p class="appointment-item">
-                <label for="appointment-name">Your name</label>
-                <input id="appointment-name" type="text" name="name" placeholder="Борода" value="">
-            </p>
-            <p class="appointment-item">
-                <label for="appointment-phone">Phone number</label>
-                <input id="appointment-phone" type="tel" name="phone" placeholder="+7 123 456-78-90" value="">
-            </p>
-            <button type="submit" class="button">Send</button>
-        </form>
-    </section>
+        <section class="appointment">
+          <h2>Make an appointment</h2>
+          <p class="appointment-info">
+            Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+          </p>
+            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+                <p class="appointment-item">
+                    <label for="appointment-date">Date</label>
+                    <input id="appointment-date" type="text" name="date" placeholder="08.10.2019" value="">
+                </p>
+                <p class="appointment-item">
+                    <label for="appointment-time">Time</label>
+                    <input id="appointment-time" type="text" name="time" placeholder="10:00" value="">
+                </p>
+                <p class="appointment-item">
+                    <label for="appointment-name">Your name</label>
+                    <input id="appointment-name" type="text" name="name" placeholder="Борода" value="">
+                </p>
+                <p class="appointment-item">
+                    <label for="appointment-phone">Phone number</label>
+                    <input id="appointment-phone" type="tel" name="phone" placeholder="+7 123 456-78-90" value="">
+                </p>
+                <button type="submit" class="button">Send</button>
+            </form>
+        </section>
+    </div>
   </main>
 
   <footer class="main-footer">
@@ -160,20 +164,22 @@
 
   <section class="modal modal-login">
       <h2>Login</h2>
-      <p>Please enter your username and password below</p>
+      <p>Please enter your login and password below</p>
       <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
           <p>
-              <label for="username" class="visually-hidden">Username</label>
-              <input id="username" class="login-icon-user" type="text" name="username" value="" placeholder="username">
+              <label for="user-login" class="visually-hidden">Username</label>
+              <input id="user-login" class="login-icon-user" type="text" name="username" value="" placeholder="username">
           </p>
           <p>
-              <label for="password" class="visually-hidden">Password</label>
-              <input id="password" class="login-icon-password" type="text" name="password" value="" placeholder="password">
+              <label for="user-password" class="visually-hidden">Password</label>
+              <input id="user-password" class="login-icon-password" type="text" name="password" value="" placeholder="password">
           </p>
           <p class="login-password-info">
-              <input id="login-password-info" type="checkbox" name="remember" checked>
-              <label for="login-password-info">Remember me</label>
-              <a class="restore" href="#">I forgot the password</a>
+              <label class="login-checkbox">
+                <input type="checkbox" name="remember" class="visually-hidden" checked>
+                  <span class="checkbox-indicator">Remember me</span>
+                <a class="restore" href="#">I forgot the password</a>
+              </label>
           </p>
           <button type="submit" class="button">Login</button>
       </form>
