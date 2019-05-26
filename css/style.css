@@ -184,13 +184,13 @@ a
     list-style: none;
 }
 
-.filter-input:hover + label,
-.filter-input:focus + label
+.filter-input:hover   label,
+.filter-input:focus   label
 {
     color: #663d15;
 }
 
-.filter-input:disabled + label
+.filter-input:disabled   label
 {
     opacity: .5;
     color: #000;
