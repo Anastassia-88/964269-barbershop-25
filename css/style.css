@@ -23,10 +23,22 @@
     margin-bottom: 75px;
 }
 
+.inner-page .main-header
+{
+    margin-bottom: 50px;
+    background-color: #000000;
+}
+
 .main-header-logo
 {
     width: 369px;
     height: 153px;
+}
+
+.inner-page .main-header-logo {
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
 }
 
 .site-navigation,
@@ -45,8 +57,11 @@
 
 .main-header-logo
 {
-    order: 1;
+    order: 2;
 }
+
+.inner-page .main-header-logo {
+  order: 0;
 
 .main-navigation-wrapper
 {
