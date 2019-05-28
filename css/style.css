@@ -55,6 +55,12 @@
     align-items: center;
 }
 
+.nner-page .main-navigation
+{
+align-items: flex-start;
+flex-direction: row;
+}
+
 .main-header-logo
 {
     order: 2;
@@ -97,6 +103,21 @@
     margin-right: 40px;
 }
 
+.inner-page .user-navigation {
+  margin-left: auto;
+}
+
+.page-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0; 
+  }
+ 
+ .catalog-columns {
+  display: flex;
+   justify-content: space-between;
+} 
+    
 .features-list {
     margin: 0;
     padding: 0;
@@ -321,6 +342,9 @@ a
 .breadcrumbs
 {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
 }
 
 .breadcrumbs a
@@ -339,6 +363,8 @@ a
     color: #aba9a7;
 }
 
+  .filters {width: 180px;}
+  
 .filter fieldset
 {
     border: none;
@@ -369,15 +395,32 @@ a
     color: #000;
 }
 
+  .catalog {
+  width: 700px;
+  }
+  
+  
 .catalog-list
 {
     list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .catalog-item
 {
     background-color: #f8f8f8;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+  
+  .catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover
@@ -421,6 +464,8 @@ a
 .pagination-list
 {
     list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .pagination-item a
@@ -500,6 +545,10 @@ a
     background-position: 0 0;
 }
 
+  .inner-page .main-footer {
+  margin-top: 45px;
+}
+    
 .footer-contacts a
 {
     text-decoration: underline;
