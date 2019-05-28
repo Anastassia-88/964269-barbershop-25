@@ -55,7 +55,7 @@
     align-items: center;
 }
 
-.nner-page .main-navigation
+.inner-page .main-navigation
 {
 align-items: flex-start;
 flex-direction: row;
@@ -67,7 +67,8 @@ flex-direction: row;
 }
 
 .inner-page .main-header-logo {
-  order: 0;
+    order: 0;
+}
 
 .main-navigation-wrapper
 {
@@ -154,6 +155,18 @@ flex-direction: row;
 {
     width: 300px;
 }
+
+.product-photos {
+    width: 460px;
+}
+
+.product-info {
+    width: 390px;
+}
+
+
+
+
 
 .main-footer
 {

@@ -9,25 +9,25 @@
 </head>
 <body class="inner-page">
 
-    <header class="main-header">
-        <nav class="main-navigation">
-            <a class="header-logo" href="index.html">
-                <img src="img/logo.svg" width="111" height="24" alt="Logo">
-            </a>
-            <ul class="site-navigation">
-                <li><a href="info.html">Info</a></li>
-                <li><a href="news.html">News</a></li>
-                <li class="site-navigation-current"><a href="price.html">Price List</a></li>
-                <li><a href="catalog.html">Catalog</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-            <ul class="user-navigation">
-                <li>
-                    <a class="login-link" href="login.html">Login</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<header class="main-header">
+    <nav class="main-navigation container">
+        <a class="header-logo" href="index.html">
+            <img src="img/logo.svg" width="111" height="24" alt="Logo">
+        </a>
+        <ul class="site-navigation">
+            <li><a href="info.html">Info</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="price.html">Price List</a></li>
+            <li class="site-navigation-current"><a href="catalog.html">Catalog</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+        <ul class="user-navigation">
+            <li>
+                <a class="login-link" href="login.html">Login</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
     <main class="container">
         <h1 class="page-title">Price List</h1>
@@ -64,54 +64,53 @@
 
     </main>
 
-    <footer class="main-footer">
-        <p class="footer-contacts">
-            Barbershop «Borodinsky»<br>
-            Address: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            <a href="map.html">How to find us</a><br>
-            Tel.: +7 (495) 666-02-66
-        </p>
-        <div class="footer-social">
-            <b>Let's be friends!</b>
-            <ul>
-                <li>
-                    <a class="social-button" href="#">VK</a>
-                </li>
-                <li>
-                    <a class="social-button" href="#">Facebook</a>
-                </li>
-                <li>
-                    <a class="social-button" href="#">Instagram</a>
-                </li>
-            </ul>
-        </div>
-        <p class="footer-copyright">
-            <b>Developed by:</b>
-            <a class="button" href="#">A. Russak</a>
-        </p>
-    </footer>
+<footer class="main-footer">
+    <p class="footer-contacts">
+        Barbershop «Borodinsky»<br>
+        Address: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        <a href="map.html">How to find us</a><br>
+        Tel.: +7 (495) 666-02-66
+    </p>
+    <div class="footer-social">
+        <b>Let's be friends!</b>
+        <ul>
+            <li>
+                <a class="social-button" href="#">VK</a>
+            </li>
+            <li>
+                <a class="social-button" href="#">Facebook</a>
+            </li>
+            <li>
+                <a class="social-button" href="#">Instagram</a>
+            </li>
+        </ul>
+    </div>
+    <p class="footer-copyright">
+        <b>Developed by:</b>
+        <a class="button" href="#">A. Russak</a>
+    </p>
+</footer>
 
-    <section class="modal modal-login">
-        <h2>Login</h2>
-        <p>Please enter your username and password below</p>
-        <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
-            <p>
-                <label for="username" class="visually-hidden">Username</label>
-                <input id="username" class="login-icon-user" type="text" name="username" value="" placeholder="username">
-            </p>
-            <p>
-                <label for="password" class="visually-hidden">Password</label>
-                <input id="password" class="login-icon-password" type="text" name="password" value="" placeholder="password">
-            </p>
-            <p class="login-password-info">
-                <input id="login-password-info" type="checkbox" name="remember" checked>
-                <label for="login-password-info">Remember me</label>
-                <a class="restore" href="#">I forgot the password</a>
-            </p>
-            <button type="submit" class="button">Login</button>
-        </form>
-        <button class="modal-close" type="button">Close</button>
-    </section>
-
+<section class="modal modal-login">
+    <h2>Login</h2>
+    <p>Please enter your username and password below</p>
+    <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
+        <p>
+            <label for="username" class="visually-hidden">Username</label>
+            <input id="username" class="login-icon-user" type="text" name="username" value="" placeholder="username">
+        </p>
+        <p>
+            <label for="password" class="visually-hidden">Password</label>
+            <input id="password" class="login-icon-password" type="text" name="password" value="" placeholder="password">
+        </p>
+        <p class="login-password-info">
+            <input id="login-password-info" type="checkbox" name="remember" checked>
+            <label for="login-password-info">Remember me</label>
+            <a class="restore" href="#">I forgot the password</a>
+        </p>
+        <button type="submit" class="button">Login</button>
+    </form>
+    <button class="modal-close" type="button">Close</button>
+</section>
 </body>
 </html>
