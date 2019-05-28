@@ -1,17 +1,159 @@
-body > *
+/*body > **/
+/*{*/
+/*  background: rgba(255, 0, 0, 0.3);*/
+/*}*/
+
+/*body > * > **/
+/*{*/
+/*  background: rgba(255, 255, 0, 0.3);*/
+/*}*/
+
+/*body > * > * > **/
+/*{*/
+/*  background: rgba(0, 0, 255, 0.3);*/
+/*}*/
+
+.visually-hidden
 {
-  background: rgba(255, 0, 0, 0.3);
+    display: none;
 }
 
-body > * > *
+.main-header
 {
-  background: rgba(255, 255, 0, 0.3);
+    margin-bottom: 75px;
 }
 
-body > * > * > *
+.main-header-logo
 {
-  background: rgba(0, 0, 255, 0.3);
+    width: 369px;
+    height: 153px;
 }
+
+.site-navigation,
+.user-navigation
+{
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header-logo
+{
+    order: 1;
+}
+
+.main-navigation-wrapper
+{
+    background-color: #000;
+    width: 100%;
+    margin-bottom: 60px;
+    min-height: 72px;
+    display: flex;
+
+}
+
+.container
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-navigation-wrapper .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-navigation
+{
+    display: flex;
+}
+
+.site-navigation li
+{
+    margin-right: 40px;
+}
+
+.features-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-item
+{
+    width: 300px;
+}
+
+.features
+{
+    margin-bottom: 80px;
+}
+
+.index-columns
+{
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.news,
+.contacts
+{
+    width: 380px;
+}
+
+.gallery,
+.appointment
+{
+    width: 300px;
+}
+
+.main-footer
+{
+    margin-top: 65px;
+    padding: 60px 0;
+    min-height: 190px;
+
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+.footer-contacts
+{
+    margin: 0;
+    width: 320px;
+    margin-right: 80px;
+}
+
+.footer-social
+{
+    width: 145px;
+}
+
+.footer-copyright
+{
+    margin: 0;
+    width: 150px;
+    margin-left: auto;
+}
+
+
+
+
+
 
 
 
@@ -73,7 +215,6 @@ a
     line-height: 20px;
 
     color: #fff;
-    background-color: #000;
 }
 
 .site-navigation,
