@@ -661,8 +661,8 @@ input[type='radio'].visually-hidden
 
 
 
-.filter-input:hover   label,
-.filter-input:focus   label
+.filter-input:hover label,
+.filter-input:focus label
 {
     color: #663d15;
 }
