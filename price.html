@@ -17,8 +17,8 @@
         <ul class="site-navigation">
             <li><a href="info.html">Info</a></li>
             <li><a href="news.html">News</a></li>
-            <li><a href="price.html">Price List</a></li>
-            <li class="site-navigation-current"><a href="catalog.html">Catalog</a></li>
+            <li><a href="price.html" class="site-navigation-current">Price List</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
             <li><a href="contacts.html">Contacts</a></li>
         </ul>
         <ul class="user-navigation">
@@ -30,30 +30,68 @@
 </header>
 
     <main class="container">
-        <h1 class="page-title">Price List</h1>
-        <ul class="breadcrumbs">
-            <li><a href="index.html">Main</a></li>
-            <li class="breadcrumbs-current">Price List</li>
-        </ul>
-        <b>Истинно мужская классика</b>
 
-        <h2>Мы используем только лучшие средства:</h2>
-        <ul>
-            <li>Baxter of California</li>
-            <li>Mr Natty</li>
-            <li>Suavecito</li>
-            <li>Malin+Goetz</li>
-        </ul>
+        <div class="inner-page-container">
+            <h1 class="page-title">Прайс-лист</h1>
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Главная</a></li>
+                <li class="breadcrumbs-current">Прайс-лист</li>
+            </ul>
+        </div>
 
-        <h2>Цены на услуги наших мастеров:</h2>
+        <section class="inner-content">
+            <h2 class="big-heading">Истинно мужская классика</h2>
 
-        <h2>Несколько слов о нас:</h2>
-        <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это
-            уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-        <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в
-            обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и
-            свободно!</p>
+            <div class="inner-columns">
+                <div class="inner-column-left">
 
+                    <h2>Мы используем только<br>
+                        лучшие средства:</h2>
+                    <ul class="custom-list-1">
+                        <li>Baxter of California</li>
+                        <li>Mr Natty</li>
+                        <li>Suavecito</li>
+                        <li>Malin+Goetz</li>
+                    </ul>
+
+                </div>
+                <div class="inner-column-right">
+
+                    <h2>Цены на услуги<br>
+                        наших мастеров:</h2>
+                    <table class="custom-table-1">
+                        <tr>
+                            <td>Стрижка</td>
+                            <td>1500 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Стрижка бороды</td>
+                            <td>500 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Накрутка усов</td>
+                            <td>350 ₽</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="inner-columns">
+                <h2>Несколько слов о нас:</h2>
+                <div class="inner-column-left">
+
+                    <p class="short-text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас — это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+
+                </div>
+                <div class="inner-column-right">
+
+                    <p class="short-text">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+
+                </div>
+            </div>
+
+        </section>
     </main>
 
 <footer class="main-footer">
@@ -126,6 +164,6 @@
     </p>
     <button class="modal-close" type="button">Close</button>
 </section>
-
+<script src="js/script.js"></script>
 </body>
 </html>
