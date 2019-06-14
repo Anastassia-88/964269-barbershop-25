@@ -6,7 +6,7 @@ var close = popup.querySelector(".modal-close");
 
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=login]");
-var password = popup.querySelector("[name=password]")
+var password = popup.querySelector("[name=password]");
 
 var isStorageSupport = true;
 var storage = "";
@@ -60,15 +60,18 @@ window.addEventListener("keydown", function (evt) {
 });
 
 
+
 // Map
-var mapLink = document.querySelector(".modal-map-link");
+var mapLink = document.querySelectorAll(".modal-map-link");
 
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".modal-close");
 
-mapLink.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    mapPopup.classList.add("modal-show");
+mapLink.forEach (function (elem) {
+    elem.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("modal-show");
+    });
 });
 
 mapClose.addEventListener("click", function (evt) {
@@ -77,35 +80,10 @@ mapClose.addEventListener("click", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-   evt.preventDefault();
-   if (evt.keydown === 27) {
+   if (evt.keyCode === 27) {
+       evt.preventDefault();
        if (mapPopup.classList.contains("modal-show")) {
            mapPopup.classList.remove("modal-show");
        }
    }
-});
-
-// Map2
-var mapLink = document.querySelector(".modal-map-link");
-
-var mapPopup = document.querySelector(".modal-map");
-var mapClose = mapPopup.querySelector(".modal-close");
-
-mapLink.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    mapPopup.classList.add("modal-show");
-});
-
-mapClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mapPopup.classList.remove("modal-show");
-});
-
-window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
-    if (evt.keydown === 27) {
-        if (mapPopup.classList.contains("modal-show")) {
-            mapPopup.classList.remove("modal-show");
-        }
-    }
 });
