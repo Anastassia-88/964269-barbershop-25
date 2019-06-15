@@ -1410,6 +1410,7 @@ input[type='radio'].visually-hidden
 
     border: 0;
     background-color: transparent;
+
 }
 
 .modal-close::before,
@@ -1581,6 +1582,7 @@ input[type='radio'].visually-hidden
 {
     width: 100%;
     margin-right: 0;
+    outline: none;
 }
 
 .modal-map
@@ -1589,7 +1591,7 @@ input[type='radio'].visually-hidden
     left: 50%;
 
     width: 766px;
-    height: 561px;
+    height: 560px;
     margin-top: -280px;
     margin-left: -390px;
 
