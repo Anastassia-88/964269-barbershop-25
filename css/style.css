@@ -48,11 +48,6 @@ input[type='radio'].visually-hidden
     clip-path: inset(100%);
 }
 
-
-
-
-
-
 .inner-page
 {
     color: #000;
@@ -132,9 +127,8 @@ input[type='radio'].visually-hidden
     line-height: 20px;
 
     display: flex;
-    flex-direction: column;
-
     align-items: center;
+    flex-direction: column;
 }
 
 .site-navigation,
@@ -152,9 +146,9 @@ input[type='radio'].visually-hidden
 
 .site-navigation
 {
-    width: 620px;
-
     flex-wrap: wrap;
+
+    width: 620px;
 }
 
 .user-navigation
@@ -215,9 +209,8 @@ input[type='radio'].visually-hidden
 
 .inner-page .main-navigation
 {
-    flex-direction: row;
-
     align-items: flex-start;
+    flex-direction: row;
 }
 
 .main-header-logo
@@ -251,9 +244,8 @@ input[type='radio'].visually-hidden
 .main-navigation-wrapper .container
 {
     display: flex;
-
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -273,7 +265,6 @@ input[type='radio'].visually-hidden
 .catalog-columns
 {
     display: flex;
-
     justify-content: space-between;
 }
 
@@ -285,13 +276,12 @@ input[type='radio'].visually-hidden
 .features-list
 {
     display: flex;
+    justify-content: space-between;
 
     margin: 0;
     padding: 0;
 
     list-style: none;
-
-    justify-content: space-between;
 }
 
 .feature-item
@@ -337,6 +327,7 @@ input[type='radio'].visually-hidden
 .index-columns
 {
     display: flex;
+    justify-content: space-between;
 
     margin-bottom: 35px;
     padding: 50px 80px;
@@ -347,8 +338,6 @@ input[type='radio'].visually-hidden
     url('../img/pattern-light.jpg');
     background-repeat: no-repeat, repeat;
     background-position: center, 0 0;
-
-    justify-content: space-between;
 }
 
 .index-columns h2
@@ -435,27 +424,26 @@ input[type='radio'].visually-hidden
     line-height: 48px;
 
     display: flex;
+    align-items: center;
 
     margin-top: 55px;
     margin-bottom: 65px;
 
     text-align: center;
-
-    align-items: center;
 }
 
 .big-heading::before,
 .big-heading::after
 {
+    flex-grow: 1;
+    flex-shrink: 0;
+
     width: 50px;
     height: 2px;
 
     content: '';
 
     background: #000;
-
-    flex-grow: 1;
-    flex-shrink: 0;
 }
 
 .big-heading::before
@@ -517,11 +505,10 @@ input[type='radio'].visually-hidden
 .inner-columns
 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     margin: 60px 0;
-
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .inner-column-left,
@@ -659,7 +646,6 @@ input[type='radio'].visually-hidden
 .appointment-form
 {
     display: flex;
-
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -718,15 +704,14 @@ input[type='radio'].visually-hidden
 .breadcrumbs
 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     margin: 0;
     margin-bottom: 50px;
     padding: 0;
 
     list-style: none;
-
-    justify-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .breadcrumbs li
@@ -913,14 +898,13 @@ input[type='radio'].visually-hidden
 .catalog-list
 {
     display: flex;
+    flex-wrap: wrap;
 
     margin: 0;
     margin-bottom: 25px;
     padding: 0;
 
     list-style: none;
-
-    flex-wrap: wrap;
 }
 
 .catalog-item
@@ -956,12 +940,12 @@ input[type='radio'].visually-hidden
     font-size: 14px;
     line-height: 18px;
 
+    order: 1;
+
     margin-top: 17px;
     margin-right: 15px;
     margin-bottom: 12px;
     margin-left: 16px;
-
-    order: 1;
 }
 
 .catalog-category
@@ -1014,13 +998,12 @@ input[type='radio'].visually-hidden
 .pagination-list
 {
     display: flex;
+    flex-wrap: wrap;
 
     margin: 0;
     padding: 0;
 
     list-style: none;
-
-    flex-wrap: wrap;
 }
 
 .pagination-item
@@ -1100,11 +1083,10 @@ input[type='radio'].visually-hidden
 .product-description
 {
     display: flex;
+    justify-content: space-between;
 
     margin-bottom: 29px;
     padding-right: 10px;
-
-    justify-content: space-between;
 }
 
 .product-description p
@@ -1238,15 +1220,14 @@ input[type='radio'].visually-hidden
 .footer-social ul
 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     width: 141px;
     margin: 0 auto;
     padding: 0;
 
     list-style: none;
-
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .footer-social b
@@ -1259,14 +1240,13 @@ input[type='radio'].visually-hidden
 .social-button
 {
     display: flex;
+    align-items: center;
+    justify-content: center;
 
     width: 43px;
     height: 43px;
 
     background-color: #000;
-
-    align-items: center;
-    justify-content: center;
 }
 
 .social-button:hover path,
@@ -1411,7 +1391,6 @@ input[type='radio'].visually-hidden
 
     border: 0;
     background-color: transparent;
-
 }
 
 .modal-close::before,
@@ -1486,11 +1465,10 @@ input[type='radio'].visually-hidden
 .login-form .login-help
 {
     display: flex;
-
-    margin: 15px 0;
-
     flex-wrap: wrap;
     justify-content: space-between;
+
+    margin: 15px 0;
 }
 
 .login-icon-user
@@ -1583,6 +1561,7 @@ input[type='radio'].visually-hidden
 {
     width: 100%;
     margin-right: 0;
+
     outline: none;
 }
 
